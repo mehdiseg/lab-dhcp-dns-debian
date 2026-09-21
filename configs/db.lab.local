@@ -1,0 +1,11 @@
+$TTL 86400
+@   IN SOA ns1.lab.local. admin.lab.local. (
+        2026092101 ; série
+        3600       ; rafraîchissement
+        1800       ; nouvel essai
+        604800     ; expiration
+        86400 )    ; TTL négatif
+@       IN NS  ns1.lab.local.
+ns1     IN A   192.168.50.10
+srv     IN A   192.168.50.20
+www     IN CNAME srv

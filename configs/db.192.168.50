@@ -1,0 +1,6 @@
+$TTL 86400
+@   IN SOA ns1.lab.local. admin.lab.local. (
+        2026092101 3600 1800 604800 86400 )
+@   IN NS  ns1.lab.local.
+10  IN PTR ns1.lab.local.
+20  IN PTR srv.lab.local.
