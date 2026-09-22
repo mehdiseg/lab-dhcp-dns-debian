@@ -1,6 +1,8 @@
 # Lab Linux : DHCP (Kea) et DNS (BIND 9) sur Debian
 
 > **Statut : à réaliser.** Ce guide est préparé à partir de la documentation officielle et de mes cours ; **je ne l'ai pas encore rejoué de bout en bout**. Les commandes sont à valider en le faisant, et le journal en bas de page sera complété avec mes résultats réels (captures, erreurs rencontrées, corrections).
+>
+> **Commandes vérifiées :** les commandes de ce guide ont été rejouées telles quelles dans des conteneurs Debian 12 et 13 (22 septembre 2026), avec les vrais BIND 9 et Kea : `kea-dhcp4 -t` valide la configuration, `named-checkconf`/`named-checkzone` valident les deux zones, et BIND répond correctement à de vraies requêtes `dig` (le CNAME `www` puis l'A du serveur, la zone inverse, l'enregistrement du serveur DNS lui-même). Vérifié ne veut pas dire réalisé : c'est l'assistant IA qui a préparé ce guide qui a rejoué ces commandes dans un conteneur jetable, pas moi sur mon propre lab. Le journal ci-dessous reste à remplir une fois que je l'aurai fait moi-même.
 
 ## Objectif
 
